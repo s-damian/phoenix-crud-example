@@ -23,7 +23,7 @@ defmodule AppWeb.Router do
   scope "/admin", AppWeb.Admin do
     pipe_through :browser
 
-    get "/articles", ArticleController, :index
+    resources "/articles", ArticleController, only: [:index, :new, :create, :edit, :update, :delete]
   end
 
   # Other scopes may use custom stacks.
