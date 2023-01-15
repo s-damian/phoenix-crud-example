@@ -49,13 +49,13 @@ mix ecto.migrate
 
 ## You can run the server, and you can run these demo URLs
 
-Run the server:
+### Run the server:
 
 ```
 mix phx.server
 ```
 
-Run demo URLs:
+### Run demo URLs:
 
 * http://127.0.0.1:4000/admin/articles
 
