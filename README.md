@@ -4,7 +4,7 @@
 </a>
 </p>
 
-# Example of CRUD with Phoenix 1.6 / Elixir
+# Example of CRUD with Phoenix 1.6 (1.6.15) / Elixir
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
@@ -35,7 +35,7 @@ Install dependencies:
 mix deps.get
 ```
 
-Create the database:
+Create the database (MySQL / MariaDB):
 
 ```
 mix ecto.create

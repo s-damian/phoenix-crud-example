@@ -1,8 +1,8 @@
-<section class="row">
+<section>
   <div>
-    <p><%= @text %></p>
+    <h1>Create article</h1>
   </div>
   <div>
-    <%= link("Annuler", to: Routes.article_path(@conn, :index)) %>
+    <%= link("Back to listing", to: Routes.article_path(@conn, :index)) %>
   </div>
 </section>

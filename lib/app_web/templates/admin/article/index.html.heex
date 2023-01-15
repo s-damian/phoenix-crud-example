@@ -1,8 +1,8 @@
-<section class="row">
+<section>
   <div>
-    <p><%= @articles %></p>
+    <h1>Article listing</h1>
   </div>
   <div>
-    <%= link("Accueil", to: Routes.page_path(@conn, :index)) %>
+    <%= link("Create article", to: Routes.article_path(@conn, :new)) %>
   </div>
 </section>
