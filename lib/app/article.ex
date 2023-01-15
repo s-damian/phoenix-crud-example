@@ -15,5 +15,8 @@ defmodule App.Article do
     article
     |> cast(attrs, [:title, :slug, :content])
     |> validate_required([:title, :slug, :content])
+    |> validate_length(:title, max: 190)
+    |> validate_length(:slug, max: 190)
+    |> unsafe_validate_unique(:slug, Repo)
   end
 end

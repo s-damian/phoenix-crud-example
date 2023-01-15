@@ -1,7 +1,11 @@
 defmodule AppWeb.Admin.ArticleController do
   use AppWeb, :controller
 
+  #alias App.Repo
+  #alias App.Article
+
   def new(conn, _params) do
+    #Repo.insert(%Article{title: "Article 1", slug: "Article-1", content: "Article 1 Content"})
     render(conn, "new.html")
   end
 
