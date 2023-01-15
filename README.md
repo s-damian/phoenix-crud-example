@@ -18,7 +18,7 @@ This example is made by [Stephen Damian](https://github.com/s-damian)
 Clone github repository:
 
 ```
-git@github.com:s-damian/phoenix-crud-example.git
+git clone git@github.com:s-damian/phoenix-crud-example.git
 ```
 
 In terminal, position yourself in the ```phoenix-crud-example``` directory:
