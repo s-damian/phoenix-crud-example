@@ -5,9 +5,9 @@ defmodule AppWeb.Admin.ArticleController do
     render(conn, "new.html", text: "Ajouter un article")
   end
 
-  def create(conn, _params) do
+  #def create(conn, _params) do
 
-  end
+  #end
 
   def index(conn, _params) do
     render(conn, "index.html", articles: "Liste des articles")
@@ -17,11 +17,11 @@ defmodule AppWeb.Admin.ArticleController do
     render(conn, "edit.html", article: "Un article à éditer")
   end
 
-  def update(conn, _params) do
+  #def update(conn, _params) do
 
-  end
+  #end
 
-  def delete(conn, _params) do
+  #def delete(conn, _params) do
 
-  end
+  #end
 end
