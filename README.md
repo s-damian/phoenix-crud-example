@@ -27,7 +27,7 @@ In terminal, position yourself in the ```phoenix-crud-example``` directory:
 cd /your_path/phoenix-crud-example/
 ```
 
-In ```config/dev.exs``` and in  ```config/test.exs```, configure your database credentials.
+In ```config/dev.exs```, configure your database credentials.
 
 Install dependencies:
 
