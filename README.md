@@ -4,7 +4,7 @@
 </a>
 </p>
 
-# Example of CRUD with Phoenix 1.6 (Elixir)
+# Example of CRUD with Phoenix 1.6 / Elixir
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
@@ -55,9 +55,9 @@ mix phx.server
 
 ## After configuring your Web Server, you can run these demo URLs
 
-* http://www.your-domain.com/admin/articles
+* http://127.0.0.1:4000/admin/articles
 
-* http://www.your-domain.com/admin/articles/new
+* http://127.0.0.1:4000/admin/articles/new
 
 And you can **Create** / **Read** (listing or show a single article) / **Update** / **Delete** articles.
 
