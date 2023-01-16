@@ -19,15 +19,15 @@ defmodule AppWeb.ConnCase do
 
   using do
     quote do
+      # The default endpoint for testing
+      @endpoint AppWeb.Endpoint
+
+      use AppWeb, :verified_routes
+
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
       import AppWeb.ConnCase
-
-      alias AppWeb.Router.Helpers, as: Routes
-
-      # The default endpoint for testing
-      @endpoint AppWeb.Endpoint
     end
   end
 

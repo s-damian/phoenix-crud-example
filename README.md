@@ -4,14 +4,14 @@
 </a>
 </p>
 
-# Example of CRUD with Phoenix 1.6 (1.6.15) / Elixir / MySQL
+# Example of CRUD with Phoenix 1.7 / Elixir / MySQL
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
 ## Requirements
 
-* Elixir >= 1.12
-* Erlang >= 22
+* Elixir >= 1.14
+* Erlang >= 24
 
 ## Configuration - Phoenix App
 

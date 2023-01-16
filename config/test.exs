@@ -17,14 +17,17 @@ config :app, App.Repo,
 # you can enable the server option below.
 config :app, AppWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "MA6ZZD8JmD1t3j8aQi1HbhgkFw6jaSTHS6KnWnU12Mw6zImJ8WSYfhREvWpjnY00",
+  secret_key_base: "I6BUsO5+T4GAf3NjJGj7tx+zn+pzlTyNQV1AC0S7re7B8aFXLeNqCyvYLmpru0ym",
   server: false
 
 # In test we don't send emails.
 config :app, App.Mailer, adapter: Swoosh.Adapters.Test
 
+# Disable swoosh api client as it is only required for production adapters.
+config :swoosh, :api_client, false
+
 # Print only warnings and errors during test
-config :logger, level: :warn
+config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime

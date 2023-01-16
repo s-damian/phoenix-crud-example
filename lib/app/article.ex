@@ -27,6 +27,8 @@ defmodule App.Article do
     Repo.all(App.Article)
   end
 
+  def get_article!(id), do: Repo.get!(App.Article, id)
+
   def create_article(attrs) do
     %App.Article{}
     |> App.Article.changeset(attrs)
