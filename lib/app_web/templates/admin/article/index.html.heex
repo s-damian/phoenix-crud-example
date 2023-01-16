@@ -1,8 +1,28 @@
 <section>
-  <div>
-    <h1>Article listing</h1>
-  </div>
+  <h1>Article listing</h1>
+
   <div>
     <%= link("Create article", to: Routes.article_path(@conn, :new)) %>
   </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for article <- @articles do %>
+        <tr>
+          <td>
+            <%= article.title %>
+          </td>
+          <td>
+            <%= link("Edit", to: Routes.article_path(@conn, :edit, article)) %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 </section>

@@ -20,7 +20,7 @@
             <% end %>
           </ul>
         </nav>
-        <%= link to: Routes.page_path(@conn, :index) do %>
+        <%= link to: Routes.page_path(@conn, :index), class: "phx-logo" do %>
           <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Logo"/>
         <% end %>
       </section>
