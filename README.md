@@ -55,7 +55,7 @@ mix ecto.migrate
 mix phx.server
 ```
 
-Here is an example of Virtual Host with Nginx: [Nginx Vhost](https://github.com/s-damian/phoenix-crud-example/blob/main/_nginx/vhost-example.conf)
+Here is an example of Virtual Host (Reverse Proxy) with Nginx: [Nginx Vhost](https://github.com/s-damian/phoenix-crud-example/blob/main/_nginx/vhost-example.conf)
 
 ### Run demo URLs
 
