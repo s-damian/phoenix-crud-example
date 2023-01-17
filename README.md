@@ -20,7 +20,7 @@ This is an example of CRUD with: **Phoenix Framework** / **MySQL** / **Tailwind 
 In this example, there is :
 
 * An example of an articles controller (for an HTML resource).
-* An example of an products controller (for LiveView).
+* An example of a products controller (for LiveView).
 
 ## Configuration - Phoenix App
 
