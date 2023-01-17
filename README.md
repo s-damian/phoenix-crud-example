@@ -8,6 +8,8 @@
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
+This is an example of CRUD with: **Phoenix Framework** / **MySQL** / **Tailwind CSS**
+
 ## Requirements
 
 * Elixir >= 1.14
@@ -55,7 +57,7 @@ mix ecto.migrate
 mix phx.server
 ```
 
-Here is an example of Virtual Host (Reverse Proxy) with Nginx: [Nginx Vhost](https://github.com/s-damian/phoenix-crud-example/blob/main/_nginx/vhost-example.conf)
+Here is an example of Virtual Host (Reverse Proxy) with Nginx: [Nginx Vhost for Phoenix](https://github.com/s-damian/phoenix-crud-example/blob/main/_nginx/vhost-example.conf)
 
 ### Run demo URLs
 
