@@ -1,0 +1,25 @@
+<.header>
+  Listing Articles
+  <:actions>
+    <.link href={~p"/articles/new"}>
+      <.button>New Article</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="articles" rows={@articles} row_click={&JS.navigate(~p"/articles/#{&1}")}>
+  <:col :let={article} label="Title"><%= article.title %></:col>
+  <:col :let={article} label="Slug"><%= article.slug %></:col>
+  <:col :let={article} label="Content"><%= article.content %></:col>
+  <:action :let={article}>
+    <.link navigate={~p"/articles/#{article}"}>Show</.link>
+  </:action>
+  <:action :let={article}>
+    <.link navigate={~p"/articles/#{article}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={article}>
+    <.link href={~p"/articles/#{article}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>
