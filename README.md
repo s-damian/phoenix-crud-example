@@ -4,7 +4,7 @@
 </a>
 </p>
 
-# Example of CRUD with Phoenix 1.7 / Elixir / MySQL
+# Example of CRUD with Phoenix 1.7 / Elixir
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
