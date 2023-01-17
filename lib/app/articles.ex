@@ -18,7 +18,11 @@ defmodule App.Articles do
 
   """
   def list_articles do
-    Repo.all(Article)
+    from(
+      a in Article,
+      order_by: [desc: a.id]
+    )
+    |> Repo.all()
   end
 
   @doc """
