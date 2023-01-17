@@ -1,0 +1,41 @@
+<.header>
+  Listing Products
+  <:actions>
+    <.link patch={~p"/products/new"}>
+      <.button>New Product</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="products" rows={@products} row_click={&JS.navigate(~p"/products/#{&1}")}>
+  <:col :let={product} label="Designation"><%= product.designation %></:col>
+  <:col :let={product} label="Slug"><%= product.slug %></:col>
+  <:col :let={product} label="Description"><%= product.description %></:col>
+  <:action :let={product}>
+    <.link navigate={~p"/products/#{product}"}>Show</.link>
+  </:action>
+  <:action :let={product}>
+    <.link patch={~p"/products/#{product}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={product}>
+    <.link phx-click={JS.push("delete", value: %{id: product.id})} data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>
+
+<.modal
+  :if={@live_action in [:new, :edit]}
+  id="product-modal"
+  show
+  on_cancel={JS.navigate(~p"/products")}
+>
+  <.live_component
+    module={AppWeb.ProductLive.FormComponent}
+    id={@product.id || :new}
+    title={@page_title}
+    action={@live_action}
+    product={@product}
+    navigate={~p"/products"}
+  />
+</.modal>
