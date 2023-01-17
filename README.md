@@ -8,12 +8,18 @@
 
 This example is made by [Stephen Damian](https://github.com/s-damian)
 
-This is an example of CRUD with: **Phoenix Framework** / **MySQL** / **Tailwind CSS**
-
 ## Requirements
 
 * Elixir >= 1.14
 * Erlang >= 24
+
+## Introduction
+
+This is an example of CRUD with: **Phoenix Framework** / **MySQL** / **Tailwind CSS**
+
+In this example, there is :
+
+* An example of an article controller (for an HTML resource).
 
 ## Configuration - Phoenix App
 
