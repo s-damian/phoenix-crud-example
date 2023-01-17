@@ -18,13 +18,20 @@ defmodule AppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
     resources "/articles", ArticleController
+
+    #live "/products", ProductLive.Index, :index
+    #live "/products/new", ProductLive.Index, :new
+    #live "/products/:id/edit", ProductLive.Index, :edit
+    #live "/products/:id", ProductLive.Show, :show
+    #live "/products/:id/show/edit", ProductLive.Show, :edit
   end
 
   #scope "/admin", AppWeb.Admin do
   #  pipe_through :browser
 
-  #  resources "/articles", ArticleController, only: [:index, :new, :create, :edit, :update, :delete]
+  #  resources "/customers", CustomerController, only: [:index, :new, :create, :edit, :update, :delete]
   #end
 
   # Other scopes may use custom stacks.
