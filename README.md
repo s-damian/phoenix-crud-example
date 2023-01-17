@@ -59,9 +59,9 @@ Here is an example of Virtual Host (Reverse Proxy) with Nginx: [Nginx Vhost](htt
 
 ### Run demo URLs
 
-* http://127.0.0.1:4000/admin/articles
+* http://127.0.0.1:4000/articles
 
-* http://127.0.0.1:4000/admin/articles/new
+* http://127.0.0.1:4000/articles/new
 
 And you can **Create** / **Read** (listing or show a single article) / **Update** / **Delete** articles.
 
