@@ -68,8 +68,16 @@ Here is an example of Virtual Host (Reverse Proxy) with Nginx: [Nginx Vhost for 
 
 ### Run demo URLs
 
+#### For example of an articles controller (for an HTML resource)
+
 * http://127.0.0.1:4000/articles
 
 * http://127.0.0.1:4000/articles/new
+
+#### For example of a products controller (for LiveView)
+
+* http://127.0.0.1:4000/products
+
+* http://127.0.0.1:4000/products/new
 
 And you can **Create** / **Read** (listing or show a single article) / **Update** / **Delete** articles.
